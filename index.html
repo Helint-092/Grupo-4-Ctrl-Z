@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos De los Santos</title>
+  <style>
+    /* Fondo animado */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(-45deg, #ff512f, #dd2476, #24c6dc, #514a9d);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
 
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Animación de texto */
+    h1, p {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 2s forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      animation-delay: 0.5s;
+    }
+
+    p {
+      font-size: 1.5rem;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Carlos De los Santos</h1>
+  <p>Me gusta el fútbol</p>
+</body>
+</html>
