@@ -1,0 +1,77 @@
+// Fondo con imagen croc.jpeg
+.fondo {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../assets/croc.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.capa-oscura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+  z-index: 2;
+}
+
+.contenido {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  padding-top: 20vh;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fondo {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url('/assets/croc.jpeg'); /* Ruta correcta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.capa-oscura {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.contenido {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e0e0e0;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88,166,255,0.5);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #c9d1d9;
+    margin-top: 1rem;
+  }
+}
